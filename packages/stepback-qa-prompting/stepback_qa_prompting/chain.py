@@ -4,11 +4,11 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, FewShotChatMessagePromptTemplate
 from langchain_core.runnables import RunnableLambda
 
-# search = DuckDuckGoSearchAPIWrapper(max_results=4)
+search = DuckDuckGoSearchAPIWrapper(max_results=4)
 
 
 def retriever(query):
-    return
+    return search.run(query)
 
 
 # Few Shot Examples
